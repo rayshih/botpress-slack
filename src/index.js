@@ -22,6 +22,7 @@ module.exports = {
 
     // TODO channel list api
     // TODO select channel api
+    // TODO remember to handle no channel found state
     slackConn.authenticateP.done(data => {
       channel = data.channels.filter(c => c.name === channelName)[0]
     })
